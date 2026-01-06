@@ -1,0 +1,63 @@
+# ================================
+# FlowForge - Docker Compose
+# ================================
+# Use this for local development with hot-reload
+# Run: docker-compose up --build
+
+version: '3.8'
+
+services:
+  # ================================
+  # Frontend Service (React)
+  # ================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - flowforge-network
+
+  # ================================
+  # Backend Service (FastAPI)
+  # ================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DEBUG=1
+    networks:
+      - flowforge-network
+
+  # ================================
+  # Production Build (Optional)
+  # ================================
+  # Uncomment to test production build locally
+  # production:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "80:80"
+  #   networks:
+  #     - flowforge-network
+
+networks:
+  flowforge-network:
+    driver: bridge

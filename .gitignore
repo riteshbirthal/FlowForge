@@ -1,0 +1,242 @@
+# ================================
+# FlowForge - Git Ignore File
+# ================================
+
+# ================================
+# Dependencies
+# ================================
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Python virtual environments
+*/venv/
+env/
+.venv/
+.env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# Python eggs
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# ================================
+# Build Outputs
+# ================================
+
+# React build
+frontend/build/
+build/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution
+*.manifest
+*.spec
+
+# ================================
+# IDE & Editor Files
+# ================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (PyCharm, WebStorm)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ================================
+# Operating System Files
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# Environment & Secrets
+# ================================
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Secret keys
+*.pem
+*.key
+secrets.json
+secrets.yaml
+secrets.yml
+
+# ================================
+# Logs & Temporary Files
+# ================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Cache
+.cache/
+*.cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ================================
+# Testing & Coverage
+# ================================
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+.hypothesis/
+.nox/
+.tox/
+
+# Test results
+test-results/
+junit.xml
+test-report.xml
+
+# ================================
+# Documentation
+# ================================
+
+# Generated docs
+docs/_build/
+site/
+
+# ================================
+# Docker
+# ================================
+
+# Docker volumes
+docker-volumes/
+
+# ================================
+# Misc
+# ================================
+
+# Package lock (uncomment if you want to ignore)
+# package-lock.json
+# yarn.lock
+
+# Local configuration
+local_settings.py
+*.local.js
+*.local.json
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Database files
+*.sqlite3
+*.db
+
+# ================================
+# Project Specific
+# ================================
+
+# Presentation generation scripts (temporary)
+create_presentation.py
+create_documentation.py
+update_docs.py
+
+# Generated presentation files (optional - remove if you want to track)
+# *.pptx
+# *.docx

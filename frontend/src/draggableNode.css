@@ -1,0 +1,112 @@
+/* Draggable Node Styles */
+.draggable-node {
+  cursor: grab;
+  min-width: 85px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border: 1px solid #475569;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.draggable-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+  border-color: #6366f1;
+}
+
+.draggable-node:active {
+  transform: translateY(0);
+  cursor: grabbing;
+}
+
+.draggable-icon {
+  font-size: 18px;
+}
+
+.draggable-label {
+  color: #e2e8f0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Type-specific styling */
+.draggable-customInput {
+  border-color: #10b981;
+}
+.draggable-customInput:hover {
+  border-color: #10b981;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.25);
+}
+
+.draggable-customOutput {
+  border-color: #ef4444;
+}
+.draggable-customOutput:hover {
+  border-color: #ef4444;
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.25);
+}
+
+.draggable-llm {
+  border-color: #8b5cf6;
+}
+.draggable-llm:hover {
+  border-color: #8b5cf6;
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.25);
+}
+
+.draggable-text {
+  border-color: #0ea5e9;
+}
+.draggable-text:hover {
+  border-color: #0ea5e9;
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.25);
+}
+
+.draggable-api {
+  border-color: #f59e0b;
+}
+.draggable-api:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.25);
+}
+
+.draggable-filter {
+  border-color: #06b6d4;
+}
+.draggable-filter:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.25);
+}
+
+.draggable-math {
+  border-color: #d946ef;
+}
+.draggable-math:hover {
+  border-color: #d946ef;
+  box-shadow: 0 6px 20px rgba(217, 70, 239, 0.25);
+}
+
+.draggable-condition {
+  border-color: #f97316;
+}
+.draggable-condition:hover {
+  border-color: #f97316;
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.25);
+}
+
+.draggable-timer {
+  border-color: #6366f1;
+}
+.draggable-timer:hover {
+  border-color: #6366f1;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+}

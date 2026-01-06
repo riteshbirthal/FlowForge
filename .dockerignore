@@ -1,0 +1,75 @@
+# ================================
+# FlowForge - Docker Ignore File
+# ================================
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+!README.md
+*.pptx
+*.docx
+PRESENTATION.md
+
+# Node modules (will be installed in container)
+node_modules
+frontend/node_modules
+
+# Python virtual environments
+venv
+.venv
+env
+backend/venv
+backend/.venv
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Build outputs
+frontend/build
+dist
+build
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Logs
+*.log
+logs
+
+# Test files
+coverage
+.pytest_cache
+htmlcov
+
+# Temporary files
+tmp
+temp
+*.tmp
+*.bak
+
+# Docker
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Local config
+local_settings.py

@@ -1,0 +1,81 @@
+/* Toolbar Styles */
+.toolbar {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  padding: 16px 20px;
+  border-bottom: 1px solid #334155;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar-header {
+  margin-bottom: 12px;
+}
+
+.toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toolbar-logo {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.toolbar-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar-title {
+  color: #f1f5f9;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #fff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.toolbar-subtitle {
+  color: #64748b;
+  font-size: 11px;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.toolbar-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #334155 50%, transparent 100%);
+  margin: 12px 0;
+}
+
+.toolbar-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.toolbar-section-title {
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.toolbar-section-hint {
+  color: #475569;
+  font-size: 10px;
+  margin: 0;
+  font-style: italic;
+}
+
+.toolbar-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
