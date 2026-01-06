@@ -3,6 +3,8 @@ import { useStore } from './store';
 import { shallow } from 'zustand/shallow';
 import './submit.css';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 const selector = (state) => ({
     nodes: state.nodes,
     edges: state.edges,
@@ -23,7 +25,7 @@ export const SubmitButton = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch('http://localhost:8000/pipelines/parse', {
+            const response = await fetch(`${API_URL}/pipelines/parse`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -49,7 +51,7 @@ ${result.is_dag
             
             alert(alertMessage);
         } catch (error) {
-            alert(`Error: ${error.message}\n\nMake sure the backend server is running at http://localhost:8000`);
+            alert(`Error: ${error.message}\n\nMake sure the backend server is running at ${API_URL}`);
         }
     };
 
